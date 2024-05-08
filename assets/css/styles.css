@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#openMenu, #closeMenu {
+	
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+
+
+#menu{
+    background-color:#582f0e;
+    margin: 0;
+    box-shadow: 0px 0px 10px 0px   rgba(41, 40, 40, 0.555);
+}
+
+
+#menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#menu li{
+    display: flex;
+    margin-right: 2%;
+    padding: 20px;
+
+    
+}
+
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    
+
+}
+
+#menu a:hover{
+    color: black;
+}
+
+
+#menu li:first-child{
+    background-color:#a68a64;
+    text-align: right;
+ }
+
+  
+.container {
+    position: relative;
+    background-color:#582f0e18;
+    display: flex;
+   
+  }
+ 
+  .imagem-opaca {
+    opacity: 0.5; 
+  }
+
+ .container img{
+    margin: 0;
+    width: 200vh;
+    height: 45vw;
+    padding: 0;
+ }
+
+
+ .container-texto{
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical */
+    left: 50%; /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+    padding: 30px 100px;
+
+ }
+
+.container-texto button{
+    background-color: #582f0e;
+    padding: 18px 20px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px   rgba(0, 0, 0, 0.9);
+margin-left: 6cm;
+
+}
+
+
+ .container-texto h1 {
+    color: #582f0e;
+    font-size: 30pt;
+    display: flex;
+ }
+
+ .container-texto p {
+    
+    font-size: 15pt;
+ }
+
+ #Calcule ul{
+    display: flex;
+ }
+
+
+
+
+ 
+            /*  mdia */
+
+
+@media only screen and (max-width: 700px) {
+    body{
+       background-color: #f4f4f4;
+    }
+   
+   
+   #openMenu, #closeMenu {
+       display: block;
+
+   }
+
+   #openMenu {
+       margin-left: auto;
+       
+       
+   }
+
+   #closeMenu {
+       position: fixed;
+       right: 15px;
+       top: 15px;
+       
+
+   }
+
+   #menu  {
+       position: fixed;
+       width: 100vw;
+       height: 100vh;
+       background-color: #11111188;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+       display: none;
+       opacity: 0;
+       transition: 0.3s;
+   }
+
+   #menu a {
+       margin: 3%;
+       color: white;
+
+
+   }
+
+}
